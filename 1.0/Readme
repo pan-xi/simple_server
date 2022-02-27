@@ -1,0 +1,14 @@
+第一期：
+	1、修改server里ip和端口号，ip为自己的ip，端口号大于1024随意即可
+	2、可执行程序在server/bin里，需要传参数ex：./server ../conf/server.conf num        其中num是子进程数
+	3、可以在客户端实现功能：
+		ls：查看当前目录
+		pwd：查看当前路径
+		remove file：删除file文件
+		cd：目录跳转
+		puts file：上传file文件
+		gets file：下载file文件
+	4、客户端退出，服务器不退出
+	5、使用tcp协议连接客户端和服务端以及传输文件
+下一期：
+	增加本期暂时没做关于子进程从任务队列拿任务功能，并增加登录功能
