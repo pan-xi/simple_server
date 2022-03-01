@@ -47,7 +47,6 @@ int main(int argc, char* argv[]){
     que_init(pque);
     pNode_t pnew;//队列任务新结点
     char flag,log_buf[128];
-    int fd_open=open("log",O_RDWR | O_CREAT,0755);//简单打印日志
     while(1){
         non=0;
         ready_fd_num=epoll_wait(epfd,evs,process_num+2,-1);//last 0 会立即返回,-1 将不确定,也有说法说是永久阻塞
